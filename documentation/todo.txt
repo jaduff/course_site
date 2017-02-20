@@ -1,0 +1,8 @@
+﻿Stop with CourseViewModel development.
+Return CourseModel statements in Controller
+
+Try passing object from model into view
+
+Something like this: return View(album);
+
+Solve this -> "The name 'model' does not exist in the current context" in View
