@@ -1,0 +1,9 @@
+C:\Users\jakra\Documents\Programming\dotnet\course_site\bin\Debug\netcoreapp1.0\course_site.deps.json
+C:\Users\jakra\Documents\Programming\dotnet\course_site\bin\Debug\netcoreapp1.0\course_site.runtimeconfig.json
+C:\Users\jakra\Documents\Programming\dotnet\course_site\bin\Debug\netcoreapp1.0\course_site.runtimeconfig.dev.json
+C:\Users\jakra\Documents\Programming\dotnet\course_site\bin\Debug\netcoreapp1.0\course_site.dll
+C:\Users\jakra\Documents\Programming\dotnet\course_site\bin\Debug\netcoreapp1.0\course_site.pdb
+C:\Users\jakra\Documents\Programming\dotnet\course_site\obj\Debug\netcoreapp1.0\course_site.csprojResolveAssemblyReference.cache
+C:\Users\jakra\Documents\Programming\dotnet\course_site\obj\Debug\netcoreapp1.0\course_site.AssemblyInfo.cs
+C:\Users\jakra\Documents\Programming\dotnet\course_site\obj\Debug\netcoreapp1.0\course_site.dll
+C:\Users\jakra\Documents\Programming\dotnet\course_site\obj\Debug\netcoreapp1.0\course_site.pdb
