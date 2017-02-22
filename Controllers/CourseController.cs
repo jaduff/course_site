@@ -23,5 +23,10 @@ namespace course_site.Controllers
         {
             return View(courseList);
         }
+
+        public IActionResult Course()
+        {
+            return View(courseList);
+        }
     }
 }
