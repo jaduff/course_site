@@ -16,9 +16,22 @@ namespace course_site.Models
 
         public Course(DirectoryInfo coursedir)
         {
-            var nameList = coursedir.Name.Split('-');
+            var nameList = coursedir.Name.Split('-', '_', ' ');
             courseYear = Int32.Parse(nameList[0]);
-            courseTitle = nameList[0];
+
+            courseTitle = "Year " + courseYear + " - ";
+
+            if (nameList.Length > 1)
+            {
+                foreach (String _word in nameList.Skip(1)){
+                    courseTitle = courseTitle + _word.First().ToString().ToUpper() + _word.Substring(1);
+                }
+            } else
+            {
+                courseTitle = courseTitle + "Digital Technologies";
+            }
+
+
 
             lessonList = new List<Lesson>();
             foreach (var lessonFile in coursedir.GetFiles())
