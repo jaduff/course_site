@@ -28,7 +28,7 @@ namespace course_site.Controllers
             return View(courseList);
         }
 
-        [HttpGet("Course/{courseYear}")]
+        [HttpGet("{courseYear}")]
         public IActionResult Course()
         {
             return View(courseList);
