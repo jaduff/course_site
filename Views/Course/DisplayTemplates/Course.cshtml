@@ -5,4 +5,5 @@
 @{
 }
 
-<li class="courseList">@Model.courseTitle</li>
+<li class="courseList" ><a asp-controller="Course"
+   asp-action="@Model.courseYear">@Model.courseTitle</a></li>
