@@ -9,6 +9,8 @@ using course_site.Models;
 
 namespace course_site.Controllers
 {
+    [Route("")]
+    [Route("Course")]
     public class CourseController : Controller
     {
 
@@ -19,11 +21,14 @@ namespace course_site.Controllers
             courseList = new CourseList();
         }
         // GET: /<controller>/
+
+        
         public IActionResult Index()
         {
             return View(courseList);
         }
 
+        [HttpGet("Course/{courseYear}")]
         public IActionResult Course()
         {
             return View(courseList);
