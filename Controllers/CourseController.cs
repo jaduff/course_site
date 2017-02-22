@@ -12,16 +12,16 @@ namespace course_site.Controllers
     public class CourseController : Controller
     {
 
-        private CourseModel courseModel;
+        private CourseList courseList;
 
         public CourseController()
         {
-            courseModel = new CourseModel();
+            courseList = new CourseList();
         }
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View(courseModel.CourseList);
+            return View(courseList);
         }
     }
 }

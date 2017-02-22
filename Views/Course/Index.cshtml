@@ -1,4 +1,4 @@
-﻿@model course_site.Models.Course
+﻿@model course_site.Models.CourseList
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -66,11 +66,7 @@
     <div class="col-md-3">
         <h1>Digital Technology Courses</h1>
         <ul>Choose your course from the list below:
-            @foreach (string course in @model.courseList)
-            {
-
-
-            }
+            @Html.DisplayFor(x => x.courseList)
         </ul>
     </div>
 </div>
