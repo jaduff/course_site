@@ -48,13 +48,23 @@ namespace course_site
             }
 
             app.UseStaticFiles();
+            app.UseMvc();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Course}/{action=Index}/{courseid?}/{lessonid?}");
-            });
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "course",
+            //        template: "{controller=Course}/{course}/{lesson}",
+            //        defaults: "{controller=Course},{action=lessonList}"
+            //        );
+
+            //    routes.MapRoute(
+            //        name: "courseList",
+            //        template: "{controller=Course}/{action=Index}",
+            //        defaults: "{controller=Course},{action=Index}"
+            //        );
+
+            //});
         }
     }
 }
