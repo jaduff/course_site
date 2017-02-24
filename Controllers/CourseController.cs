@@ -28,6 +28,14 @@ namespace course_site.Controllers
             return View(courseList);
         }
 
+        /*[HttpGet("{courseYear}/{lessonid}")]
+        public IActionResult Lesson(int courseYear)
+        {
+             courseList.
+            //get lessonlist from course - need to pass courseYear to get course.
+            return View(lessonList);
+        }*/
+
         [HttpGet("{courseYear}")]
         public IActionResult Course(int courseYear)
         {
