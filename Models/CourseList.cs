@@ -34,6 +34,11 @@ namespace course_site.Models
             courseDict = dict;
         }
 
+        public Course getCourse(int courseYear)
+        {
+            return courseDict[courseYear];
+        }
+
     }
 
 

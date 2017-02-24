@@ -39,7 +39,8 @@ namespace course_site.Controllers
         [HttpGet("{courseYear}")]
         public IActionResult Course(int courseYear)
         {
-            return View(courseList);
+            Course course = courseList.getCourse(courseYear);
+            return View(course);
         }
     }
 }

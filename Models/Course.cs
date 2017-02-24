@@ -12,7 +12,7 @@ namespace course_site.Models
         public int courseYear { get; set; }
         public string courseTitle { get; set; }
         public int courseName { get; set; }
-        public List<Lesson> lessonList { get; }
+        public SortedDictionary<int, Lesson> lessonDict { get; }
 
         public Course(DirectoryInfo coursedir)
         {
@@ -33,11 +33,12 @@ namespace course_site.Models
 
 
 
-            lessonList = new List<Lesson>();
+            lessonDict = new SortedDictionary<int, Lesson>();
             foreach (var lessonFile in coursedir.GetFiles())
             {
                 var lesson = new Lesson(lessonFile);
-                lessonList.Add(lesson);
+                lesson.courseYear = courseYear;
+                lessonDict.Add(lesson.lessonNumber,lesson);
             }
 
             //Need name of course

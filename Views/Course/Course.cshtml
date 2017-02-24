@@ -1,4 +1,4 @@
-﻿@model course_site.Models.CourseList
+﻿@model course_site.Models.Course
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -64,6 +64,10 @@
 
 <div class="row">
     <div class="col-md-3">
-        <h1>This is the lesson index.</h1>
+        <h1>display the name of the course here</h1>
+        <ul>
+            Choose your next lesson below:
+            @Html.DisplayFor(x => x.lessonDict.Values)
+        </ul>
     </div>
 </div>

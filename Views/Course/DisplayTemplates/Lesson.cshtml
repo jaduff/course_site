@@ -1,0 +1,8 @@
+﻿@model course_site.Models.Lesson
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<li class="courseList" ><a asp-controller="Course" asp-action="Course" asp-route-courseYear="@Model.courseYear" asp-route-lessonNumber="@Model.lessonNumber">@Model.lessonTitle</a></li>
