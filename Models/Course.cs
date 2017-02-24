@@ -11,7 +11,7 @@ namespace course_site.Models
         public int courseNumber { get; set; }
         public int courseYear { get; set; }
         public string courseTitle { get; set; }
-        public int courseName { get; set; }
+        //public int courseName { get; set; }
         public SortedDictionary<int, Lesson> lessonDict { get; }
 
         public Course(DirectoryInfo coursedir)
