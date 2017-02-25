@@ -45,5 +45,11 @@ namespace course_site.Models
             //Location of course
             //List of lessons in course
         }
+
+        public Lesson getLesson(int lessonNumber)
+        {
+
+            return lessonDict[lessonNumber];
+        }
     }
 }

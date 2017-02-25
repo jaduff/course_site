@@ -33,7 +33,8 @@ namespace course_site.Controllers
         {
              
             //get lessonlist from course - need to pass courseYear to get course.
-            return View();
+            Lesson lesson = courseList.getCourse(courseYear).getLesson(lessonNumber);
+            return View(lesson);
         }
 
         [HttpGet("{courseYear}")]
