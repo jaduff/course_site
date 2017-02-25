@@ -13,6 +13,8 @@ namespace course_site.Models
         public string lessonTitle { get; }
         public FileInfo lessonFile { get; }
 
+        private string lessonHTML { get; set;}
+
         public Lesson(FileInfo lessonfile)
         {
             lessonFile = lessonfile;
@@ -37,6 +39,16 @@ namespace course_site.Models
 
             //Need name of lesson
             //Location of lesson
+        }
+
+        public string getLessonHTML()
+        {
+            if (lessonHTML == null)
+            {
+                lessonHTML = File.ReadAllText(@lessonFile.FullName);
+            }
+
+            return lessonHTML;
         }
     }
 }

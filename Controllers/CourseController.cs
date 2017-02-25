@@ -10,7 +10,7 @@ using course_site.Models;
 namespace course_site.Controllers
 {
     [Route("")]
-    [Route("Course")]
+    //[Route("Course")]
     public class CourseController : Controller
     {
 
@@ -22,7 +22,6 @@ namespace course_site.Controllers
         }
         // GET: /<controller>/
 
-        
         public IActionResult Index()
         {
             return View(courseList);
