@@ -1,1 +1,2 @@
-﻿Fix the friendly URLs in the razor template.
+﻿Create menu structures.
+Test images.
